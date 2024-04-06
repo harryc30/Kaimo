@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Kaimo | Impress, Instantly</title>
+<link rel = "icon" href = "Kaimo Logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: MADEGentle;
+  src: url("MADE Gentle PERSONAL USE.otf");
+}
+
+@font-face {
+  font-family: GlacialIndifference;
+  src: url("glacial-indifference/GlacialIndifference-Regular.otf");
+}
+@font-face {
+  font-family: GlacialIndifferenceBold;
+  src: url("glacial-indifference/GlacialIndifference-Bold.otf");
+}
+.topbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 14%;
+  padding: 0px;
+  /*background-color: rgb(245, 245, 245);*/
+}
+#template {
+    position: absolute;
+    top: 27.5%;
+    right: 10%;
+    background-color: rgb(245,245,245);
+    border-radius: 15px;
+    border-color:white;
+    width: 50%;
+    height: 50%;
+}
+.slot {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: none  ;
+  border:none;
+  padding:none;
+}
+#slot1 {
+  top: 50%;
+  left: 77%;
+}
+#slot2 {
+  top: 27.5%;
+  left: 77%;
+}
+.next {
+  position: absolute;
+  top: 80%;
+  height: 2.5%;
+  width: 20%;
+  background-color: white;
+  border-radius:15px;
+  border:none;
+  color: black;
+  font-family: GlacialIndifference;
+  font-size:20px;
+}
+#next1 {
+  display:block;
+  right: 10%;
+}
+#next2 {
+  display:none;
+  right: 7.5%;
+}
+.h1 {
+  position: absolute;
+  font-family: GlacialIndifferenceBold;
+  font-size: 250%;
+}
+.h2 {
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: center;
+    font-family: GlacialIndifference;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px; /* getting a curve */
+    position: absolute;
+    width: 10%;
+    height: 7%;
+}
+.colorbutton1 {
+    position: absolute;
+    border-radius: 50%;
+    height:6%;
+    width:3%;
+    border:none;
+    right: 61.25%;
+}
+.colorbutton2 {
+    position: absolute;
+    border-radius: 50%;
+    height:6%;
+    width:3%;
+    border:none;
+    right: 65.25%;
+}
+#cover1 {
+  position: absolute;
+  top: 27.5%;
+  left: 30%;
+  width: 9%;
+  height: 50%;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+#cover2 {
+  position: absolute;
+  top: 27.5%;
+  left: 30%;
+  width: 9%;
+  height: 50%;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+#logo {
+  position: absolute;
+  top: 4%;
+  left: 9.5%;
+  height: 7.5%;
+  width: 10%;
+  border-radius:15px;
+  color: white;
+  font-size: 30px;
+  font-family: MADEGentle;
+  border: none;
+  background-color: black;
+}
+#createacard {
+  background-image: linear-gradient(to right, rgb(142, 22, 255) , rgb(77, 74, 255));
+  color: white;
+  border: none;
+  text-align: center;
+  font-family: GlacialIndifference;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px; /* getting a curve */
+  position: absolute;
+  width: 15%;
+  height: 7%;
+  top: 3.5%;
+  right: 10%;
+}
+#aboutus {
+  top: 3.5%;
+  right: 27.5%;
+}
+#FAQ {
+  top: 3.5%;
+  right: 37.5%;
+}
+#plans {
+  top: 3.5%;
+  right: 47.5%;
+}
+#bigtext {
+  top: 30%;
+  left: 10%;
+  right: 70%;
+}
+#redbutton {
+    background-color:rgb(255, 176, 176);
+    top: 30%;
+}
+#bluebutton {
+    background-color:rgb(176, 209, 255);
+    top: 30%;
+}
+#greenbutton {
+    background-color:rgb(176, 255, 193);
+    top: 37.5%;
+}
+#purplebutton {
+    background-color:rgb(200, 176, 255);
+    top: 37.5%;
+}
+#yellowbutton {
+    background-color:rgb(255, 250, 176);
+    top: 45%;
+}
+#orangebutton {
+    background-color:rgb(255, 206, 176);
+    top: 45%;
+}
+#greybutton {
+    background-color:rgb(245, 245, 245);
+    top: 52.5%;
+}
+#midgreybutton {
+    background-color:rgb(205, 205, 205);
+    top: 52.5%;
+}
+#darkgreybutton {
+    background-color:rgb(115, 115, 115);
+    top: 60%;
+}
+#blackbutton {
+    background-color:rgb(0, 0, 0);
+    top: 60%;
+}
+#navybutton {
+    background-color:rgb(11, 11, 69);
+    top: 67.5%;
+}
+#maroonbutton {
+    background-color:rgb(128, 0, 0);
+    top: 67.5%;
+}
+.icon {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: auto;
+  padding:none;
+}
+#insta {
+  top: 30%;
+  left: 30%;
+}
+#tiktok {
+  top: 47.5%;
+  left: 30%;
+  border-radius: 25px;
+}
+#name {
+  top: 46%;
+  left: 43%;
+  display: none;
+  position: absolute;
+  padding:none;
+  font-family: MADEGentle;
+  font-size: 60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topbar"></div>
+<button id = "logo" onclick='window.location.href="file:///C:/Users/harry/Desktop/vscode/Kaimo/home.html"'>Kaimo</div>
+<button id="createacard" onclick='window.location.href="file:///C:/Users/harry/Desktop/vscode/Kaimo/demo.html"'>Create a Card</button>
+<button class=h2 id=aboutus onclick='window.location.href="file:///C:/Users/harry/Desktop/vscode/Kaimo/about.html"'>About Us</button>
+<button class="h2" id=FAQ onclick='window.location.href="file:///C:/Users/harry/Desktop/vscode/Kaimo/FAQ.html"'>FAQ</button>
+<button class="h2" id=plans onclick='window.location.href="file:///C:/Users/harry/Desktop/vscode/Kaimo/plans.html"'>Plans</button>
+<div id="template"></div>
+<div class="slot" id="slot1" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+<div class="slot" id="slot2" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+
+<div class="h1" id="bigtext">First, let's choose a background color</div>
+<button class="colorbutton1" id=redbutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton2" id=bluebutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton1" id=greenbutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton2" id=purplebutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton1" id=yellowbutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton2" id=orangebutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton2" id=greybutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton1" id=midgreybutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton2" id=darkgreybutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton1" id=blackbutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton1" id=navybutton onclick="changeBackground(this.id)"></button>
+<button class="colorbutton2" id=maroonbutton onclick="changeBackground(this.id)"></button>
+
+<div id="cover1"></div>
+<div id="cover2"></div>
+<img class="icon" id="insta" src="icons/Instagram.png" draggable="true" ondragstart="drag(event)">
+<img class="icon" id="tiktok" src="icons/TikTok.png" draggable="true" ondragstart="drag(event)">
+<button class="next" id="next2" onclick='step3()'>Let's wrap it up!</button>
+<div id="name" contenteditable="true">Your Name</div>
+<button class="next" id="next1" onclick='step2()'>Ready for the next step?</button>
+
+</body>
+
+<script>
+
+var instances = 0;
+
+function changeBackground(clicked_id) {
+  document.getElementById("template").style.backgroundColor = getComputedStyle(document.getElementById(clicked_id))["background-color"];
+  /*document.getElementById("slot1").style.backgroundColor = getComputedStyle(document.getElementById(clicked_id))["background-color"];
+  document.getElementById("slot2").style.backgroundColor = getComputedStyle(document.getElementById(clicked_id))["background-color"];*/
+}
+function step2(){
+  document.getElementById("bigtext").innerHTML="How about some stickers?";
+  document.getElementById("cover1").style.display="block";
+  document.getElementById("insta").style.display="block";
+  document.getElementById("tiktok").style.display="block";
+  document.getElementById("next1").style.display="none";
+  document.getElementById("next2").style.display="block";
+}
+function step3(){
+  document.getElementById("bigtext").innerHTML="Finally, make it yours!";
+  document.getElementById("cover2").style.display="block";
+  document.getElementById("next2").style.display="none";
+  document.getElementById("name").style.display="block";
+}
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+
+</script>
+
+</html>
